@@ -1,7 +1,7 @@
 # Stripe+php金流創建
 
 1.方法1:
-  在後台創建商品,讓stripe去抓商品金額直接扣款(跳stripe付款頁面)
+<br>在後台創建商品,讓stripe去抓商品金額直接扣款(跳stripe付款頁面)
 checkout.html
 pay.php
 
