@@ -22,7 +22,7 @@ require_once('vendor/autoload.php');
 
 3.方法3:
 跳轉結帳頁面,填信用卡資訊,串建payment進入帳戶內(前端可以改畫面)
-checkout3.html
-checkout3.css
-checkout3.js
-pay3.php
+* checkout3.html
+* checkout3.css
+* checkout3.js
+* pay3.php
