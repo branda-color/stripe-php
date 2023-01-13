@@ -9,7 +9,7 @@ function calculateOrderAmount(array $items): int {
     // Replace this constant with a calculation of the order's amount
     // Calculate the order total on the server to prevent
     // people from directly manipulating the amount on the client
-    return 1400;
+    return 300;
 }
 
 header('Content-Type: application/json');
@@ -21,18 +21,18 @@ try {
 
     // Create a PaymentIntent with amount and currency
     $paymentIntent = \Stripe\PaymentIntent::create([
-        'amount' => calculateOrderAmount($jsonObj->items),
+        //家總要刷的金額
+        'amount' => 100,
+        //幣別
         'currency' => 'usd',
         'automatic_payment_methods' => [
             'enabled' => true,
         ],
     ]);
 
-    $output = [
-        'clientSecret' => $paymentIntent->client_secret,
-    ];
 
-    echo json_encode($output);
+    echo json_encode(array('client_secret' => $paymentIntent->client_secret));
+
 
 } catch (Error $e) {
     http_response_code(500);

@@ -20,6 +20,7 @@ async function initialize() {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ items }),
+
   }).then((r) => r.json());
 
   elements = stripe.elements({ clientSecret });
