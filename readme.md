@@ -25,4 +25,5 @@ require_once('vendor/autoload.php');
 * checkout3.html
 * checkout3.css
 * checkout3.js
+* checkout4.js (增加自訂義型態>>3的進化版)
 * pay3.php
