@@ -20,7 +20,7 @@ $checkout_session = \Stripe\Checkout\Session::create([
   ]
 ],
   'mode' => 'payment',
-  'success_url' => $YOUR_DOMAIN . '/success.html',
+  'success_url' => $YOUR_DOMAIN . '/checkout2223.html',
   'cancel_url' => $YOUR_DOMAIN . '/cancel.html',
 ]);
 
