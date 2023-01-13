@@ -9,6 +9,8 @@ composer require stripe/stripe-php
 ```
 require_once('vendor/autoload.php');
 ```
+流程圖  
+![image](https://github.com/branda-color/stripe-php/blob/master/stripe.PNG)
 
 1.方法1:  
 在後台創建商品,讓stripe去抓商品金額直接扣款(跳stripe付款頁面)  
